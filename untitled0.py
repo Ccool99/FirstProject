@@ -7,12 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/18Vsj_8eTbmFuXftNBO-Qfla_GE6Ze_Ri
 """
 
-!pip install streamlit
 import openai
 import streamlit as st
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "OPENAI_API_KEY"
 
 # Streamlit app title
 st.title("AI Customer Support Chatbot")
@@ -29,4 +28,8 @@ if st.button("Get Answer"):
         st.write("🤖 AI:", response["choices"][0]["message"]["content"])
     else:
         st.write("Please enter a question.")
+
+
+
+
 
