@@ -13,7 +13,7 @@ user_input = st.text_input("Ask me anything:")
 
 if st.button("Get Answer"):
  if user_input:
-     response = openai.ChatCompletion().create(
+     response = openai.client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": user_input}]
 )
