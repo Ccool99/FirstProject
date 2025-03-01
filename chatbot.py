@@ -19,5 +19,5 @@ if st.button("Get Answer"):
 )
 st.write("🤖 AI:", response["choices"][0]["message"]["content"])
  else:
-st.write("Please enter a question.")
+   st.write("Please enter a question.")
     
