@@ -17,7 +17,7 @@ if st.button("Get Answer"):
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": user_input}]
 )
-     st.write("🤖 AI:", response["choices"][0]["message"]["content"])
+st.write("🤖 AI:", response["choices"][0]["message"]["content"])
  else:
-     st.write("Please enter a question.")
+st.write("Please enter a question.")
     
