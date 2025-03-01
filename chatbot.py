@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # Set OpenAI API key
-openai.api_key = "your-api-key-here"
+openai.api_key = "OPENAI_API_KEY"
 
 # Streamlit app title
 st.title("AI Customer Support Chatbot")
